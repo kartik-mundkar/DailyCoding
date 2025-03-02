@@ -1,0 +1,11 @@
+            l2=l2.next
+        ans=num1+num2
+        ans_node=ListNode()
+        head=ans_node
+        while ans>0:
+            ans_node.val=ans%10
+            ans=ans//10
+            if ans>0:
+                ans_node.next=ListNode()
+                ans_node=ans_node.next
+        return head
